@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vancomycin Dosing Calculator</title>
+  </head>
+  <body>
+    <h1>Vancomycin Dosing Calculator</h1>
+    <form action="/" method="POST">
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" name="weight" required><br>
+
+      <label for="scr">Serum Creatinine (mg/dL):</label>
+      <input type="number" id="scr" name="scr" step="0.1" required><br>
+
+      <label for="target">Target Trough Level (mg/L):</label>
+      <input type="number" id="target" name="target" step="0.1" required><br>
+
+      <input type="submit" value="Calculate">
+    </form>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vancomycin Dosing Calculator</title>
+  </head>
+  <body>
+    <h1>Vancomycin Dosing Calculator Result</h1>
+    <p>The recommended dose of vancomycin is {{ dose }} mg every 12 hours.</p>
+  </body>
+</html>
+
+
+
